@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    color: #17252A;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.logo-img {
+    vertical-align: middle;
+}
+
+nav {
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #2B7A78;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav li a {
+    color: #FEFFFF;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #17252A;
+}
+
+.content {
+    padding: 0px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+}
+  
+.sticky + .content {
+    padding-top: 57px;
+}
+
+h1 {
+    position: relative;
+}
+
+h1 span {
+    position: absolute;
+    top: -80px;
+}
+
+.parallax {
+    text-align: center;
+    background-image: url("../img/Farshad.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: multiply;
+    color: #FEFFFF;
+    margin: 0;
+}
+
+.About {
+    position: relative;
+    float: right;
+    width: 30%;
+    text-align: left;
+    padding-right: 35px;
+}
+
+.Portfolio {
+    text-align: center;
+    background-color: #FEFFFF;
+    color: #2B7A78;
+}
+
+.proj {
+    text-align: center;
+}
+
+.individualProject {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.individualProject:hover .overlay {
+    opacity: 0.85;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #17252A;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #17252A;
+}
+
+table td:hover .overlay {
+    opacity: 0.85;
+}
+
+.text {
+    color: #3AAFA9;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.view {
+    border: 1px solid #FEFFFF;
+    background-color: #2B7A78;
+    border-radius: 8px;
+    color: #FEFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 15px;
+}
+
+.view:hover {
+    background-color: #FEFFFF;
+    color: #2B7A78;
+    border-color: #2B7A78;
+}
+
+.Contact {
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    text-align: center;
+    padding: 1px;
+}
+
+.aligned label {
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+}
+
+.aligned {
+    display: inline-block;
+}
+
+.half {
+    height: 25px;
+    width: 200px;
+    padding: 3px 20px;
+    margin: 10px 20px;
+    border: 1px solid #17252A;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.submit {
+    border-radius: 4px;
+    border: none;
+    background-color: #17252A;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.submit:hover {
+    background-color: #FEFFFF;
+    color: #2B7A78;
+    border-color: #2B7A78;
+}
+
+input[type=text]:focus {
+    border: 2px solid #3AAFA9;
+}
+
+textarea {
+    resize: vertical;
+    border-color: #17252A;
+    width: 485px;
+    padding: 8px 20px;
+    margin: 10px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #17252A;
+    color: #FEFFFF;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+footer a {
+    margin: 10px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 0.5px solid;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook, .fa-instagram, .fa-github, .fa-linkedin, .fa-angellist {
+    background: #2B7A78;
+    color: #FEFFFF;
+    border-color: #FEFFFF;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-github:hover, .fa-linkedin:hover, .fa-angellist:hover {
+    background-color: #FEFFFF;
+    color: #2B7A78;
+    border-color: #2B7A78;
+}
+
+hr {
+    border: 0.5px solid #2B7A78;
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    nav li {
+        margin-right: 30px;
+    }
+
+    .parallax {
+        background-image: url("../img/Farshad-small.jpg");
+        height: 600px;
+    }
+
+    .About {
+        width: auto;
+        text-align: center;
+        margin-top: 325px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .individualProject {
+        height: 225px;
+        width: 325px;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    textarea {
+        width: 200px;
+        padding: 8px 20px;
+        margin: 10px 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+    }
+}

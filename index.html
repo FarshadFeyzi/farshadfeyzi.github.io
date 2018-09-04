@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farshad Feyzi</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header id="home">
+            <a class="logo" href="#home"><img class="logo-img" src="img/logo.png" alt="Company logo" height= 100px width= 100px>Farshad Feyzi</a>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="parallax">
+                <div class="About">
+                    <h1><span id="about"></span>About</h1>
+                    <p>My name is Farshad Feyzi, and I am a Full Stack Web Developer.</p>
+                    <p>I have a lot of experience working in frontend and backend web development. Currently, I am strengthening my understanding of web development through side projects. In the future, I wish to expand my skill set to include mobile development. Currently, I am seeking full-time opportunities in the Bay Area.</p>
+                </div>
+            </div>
+            <div class="Portfolio">
+                <h1><span id="projects"></span>Projects</h1>
+                <p>These are some of the projects that I have worked on.</p>
+                <div class="proj">
+                    <div class="individualProject">
+                        <div class="container">
+                            <img class="img" src="img/Fabflix.png" title="Fabflix">
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>Fabflix</p>
+                                    <form action="https://github.com/FarshadFeyzi/Fabflix">
+                                        <input class="view" type="submit" value="View on GitHub"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individualProject">
+                        <div class="container">
+                            <img class="img" src="img/MSC.png" title="MySavvyCalendar">
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>MySavvyCalendar</p>
+                                    <form action="https://github.com/FarshadFeyzi/MySavvyCalendar">
+                                        <input class="view" type="submit" value="View on GitHub"/>
+                                    </form>
+                                    <form action="https://mysavvycalendar.com/">
+                                        <input class="view" type="submit" value="View Website"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individualProject">
+                        <div class="container">
+                            <img class="img" src="img/MQ.png" title="MapQuest">
+                            <div class="overlay">
+                                <div class="text">
+                                    <p>MapQuest</p>
+                                    <form action="https://github.com/FarshadFeyzi/MapQuest-API-Navigation-Assistant">
+                                        <input class="view" type="submit" value="View on GitHub"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="Contact">
+                <h1><span id="contact"></span>Contact Me</h1>
+                <form method="post" action="https://formspree.io/farshadf1996@gmail.com">
+                    <div class = "aligned">
+                        <label>Name</label><br>
+                        <input class="half" type="text" name="name" required>
+                    </div>
+                    <div class = "aligned">
+                        <label>Email</label><br>
+                        <input class="half" type="text" name="_replyto" required><br>
+                    </div><br><br>
+                    <div class="aligned">
+                        <label>Message</label><br>
+                        <textarea rows="10" cols="50" name="message"></textarea><br>
+                    </div><br><br>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+                <br>
+            </div>
+            <footer>
+                <br>
+                <a href="https://www.facebook.com/farshad.feyzi" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/ffeyzi/?hl=en" class="fa fa-instagram"></a>
+                <a href="https://github.com/FarshadFeyzi" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/farshadfeyzi" class="fa fa-linkedin"></a>
+                <a href="https://angel.co/farshad-feyzi" class="fa fa-angellist"></a>
+                <p>&copy; Farshad Feyzi 2018</p>
+            </footer>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                } else {
+                navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
