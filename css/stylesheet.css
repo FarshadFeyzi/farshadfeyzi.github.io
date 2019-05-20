@@ -16,11 +16,13 @@ body {
     vertical-align: middle;
 }
 
+/* Navigation */
+
 nav {
     text-align: center;
     overflow: hidden;
     padding: 20px;
-    background-color: #2B7A78;
+    background-color: #17252A;
     z-index: 1;
     width: 100%;
 }
@@ -42,7 +44,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #17252A;
+    color: #2B7A78;
 }
 
 .content {
@@ -67,6 +69,8 @@ h1 span {
     top: -80px;
 }
 
+/* About */
+
 .parallax {
     text-align: center;
     background-image: url("../img/Farshad.jpg");
@@ -88,6 +92,62 @@ h1 span {
     text-align: left;
     padding-right: 35px;
 }
+
+/* Experience */
+
+.Experience {
+    text-align: center;
+    color: #2B7A78;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.work {
+    text-align: left;
+    display: flex;
+}
+
+.workImage {
+    padding-top: 23px;
+}
+
+.workDetails {
+    padding-left: 25px;
+}
+
+.jobImg {
+    height: 75px;
+    width: 75px;
+    border: 1px solid #17252A;
+}
+
+/* Skills */
+
+.Skills {
+    text-align: center;
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    padding: 1px;
+}
+
+.langBlock {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.lang {
+    border: 1px solid #FEFFFF;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-transition: padding 0.1s;
+    transition: padding 0.1s;
+    margin-bottom: 10px;
+}
+
+/* Projects */
 
 .Portfolio {
     text-align: center;
@@ -168,6 +228,8 @@ table td:hover .overlay {
     border-color: #2B7A78;
 }
 
+/* Contact */
+
 .Contact {
     background-color: #2B7A78;
     color: #FEFFFF;
@@ -226,6 +288,8 @@ textarea {
     font-size: 15px;
 }
 
+/* Footer */
+
 footer {
     background-color: #17252A;
     color: #FEFFFF;
@@ -264,11 +328,13 @@ footer a {
 }
 
 hr {
-    border: 0.5px solid #2B7A78;
+    border: 0.5px solid #17252A;
     width: 70%;
 }
 
-@media only screen and (max-width: 600px) {
+/* Media Query */
+
+@media only screen and (max-width: 650px) {
     nav li {
         margin-right: 30px;
     }
@@ -292,9 +358,25 @@ hr {
         padding: 10px;
         display: inline-block;
     }
+}
+
+@media only screen and (max-width: 570px) {
+    nav li {
+        margin-right: 25px;
+    }
+
+    .half {
+        height: 25px;
+        width: 375px;
+        padding: 3px 20px;
+        margin: 10px 20px;
+        border: 1px solid #17252A;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+    }
 
     textarea {
-        width: 200px;
+        width: 375px;
         padding: 8px 20px;
         margin: 10px 20px;
         font-family: 'Ubuntu', sans-serif;

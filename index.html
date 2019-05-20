@@ -16,11 +16,14 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="content">
+            <!-- About -->
             <div class="parallax">
                 <div class="About">
                     <h1><span id="about"></span>About</h1>
@@ -28,6 +31,76 @@
                     <p>I have a lot of experience working in frontend and backend web development. Currently, I am strengthening my understanding of web development through side projects. In the future, I wish to expand my skill set to include mobile development. Currently, I am seeking full-time opportunities in the Bay Area.</p>
                 </div>
             </div>
+            <!-- Experience -->
+            <div class="Experience">
+                <h1><span id="experience"></span>Experience</h1>
+                <div class="work">
+                    <div class="workImage">
+                        <img class="jobImg" src="img/embm.jpg" title="eMBM Inc.">
+                    </div>
+                    <div class="workDetails">
+                        <h3>Software Engineering Intern</h3>
+                        <h4>eMBM Inc.</h4>
+                        <h5>Jul 2018 - Dec 2018 (6 months)</h5>
+                        <p>While working at eMBM Inc., I worked with the quality assurance team to monitor debugging process results and investigate the causes of non-conforming software. Furthermore, I designed new features for pre-existing systems using Python, wrote unit and functional tests for internal tools, and identified deficiencies.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="work">
+                    <div class="workImage">
+                        <img class="jobImg" src="img/cec.jpg" title="Computers Experts Corp">
+                    </div>
+                    <div class="workDetails">
+                        <h3>Engineering Intern</h3>
+                        <h4>Computer Experts Corp</h4>
+                        <h5>Jun 2014 - Sep 2017 (over 3 years)</h5>
+                        <p>As an engineering intern at Computer Experts Corporation, I worked with the client engineering team to build and install Windows Servers for clients' network systems. I also assisted customers with desktop, laptop, and mobile issues. Finally, I set up and configured PC and Macintosh computers to meet the needs of multiple small businesses in the Bay Area, and presented weekly reports to a multi-disciplinary team and non-experts.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="work">
+                    <div class="workImage">
+                        <img class="jobImg" src="img/hackuci.jpg" title="HackUCI">
+                    </div>
+                    <div class="workDetails">
+                        <h3>Corporate Outreach Co-Leader</h3>
+                        <h4>HackUCI</h4>
+                        <h5>May 2015 - Jan 2016 (8 months)</h5>
+                        <p>During my time here, I helped lead a group of eight students in contacting companies in order to secure more than $25,000 of funding for our university hackathon. Also, I worked alongside the Logistics and Marketing committees to plan for the event based on our resources and the number of attendees.</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <!-- Skills -->
+            <div class="Skills">
+                <h1><span id="skills"></span>Skills</h1>
+                <div class="langBlock">
+                    <u><h2>Tools & Technologies</h2></u>
+                    <h3>Front-End</h3>
+                    <div class="lang" id="html">HTML</div>
+                    <div class="lang" id="css">CSS</div>
+                    <div class="lang" id="javascript">JavaScript</div>
+                    <div class="lang" id="react">React</div>
+                </div>
+                <hr class="greenHr">
+                <div class="langBlock">
+                    <h3>Back-End</h3>
+                    <div class="lang" id="python">Python</div>
+                    <div class="lang" id="java">Java</div>
+                    <div class="lang">SQL</div>
+                    <div class="lang" id="ruby">Ruby</div>
+                    <div class="lang">Ruby on Rails</div>
+                    <div class="lang">PHP</div>
+                </div>
+                <hr class="greenHr">
+                <div class="langBlock">
+                    <h3>Others</h3>
+                    <div class="lang">C++</div>
+                    <div class="lang">Swift</div>
+                </div>
+                <br>
+            </div>
+            <!-- Portfolio -->
             <div class="Portfolio">
                 <h1><span id="projects"></span>Projects</h1>
                 <p>These are some of the projects that I have worked on.</p>
@@ -54,9 +127,6 @@
                                     <form action="https://github.com/FarshadFeyzi/MySavvyCalendar">
                                         <input class="view" type="submit" value="View on GitHub"/>
                                     </form>
-                                    <form action="https://mysavvycalendar.com/">
-                                        <input class="view" type="submit" value="View Website"/>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +147,7 @@
                 </div>
                 <br>
             </div>
+            <!-- Contact Form -->
             <div class="Contact">
                 <h1><span id="contact"></span>Contact Me</h1>
                 <form method="post" action="https://formspree.io/farshadf1996@gmail.com">
@@ -103,7 +174,11 @@
                 <a href="https://github.com/FarshadFeyzi" class="fa fa-github"></a>
                 <a href="https://www.linkedin.com/in/farshadfeyzi" class="fa fa-linkedin"></a>
                 <a href="https://angel.co/farshad-feyzi" class="fa fa-angellist"></a>
-                <p>&copy; Farshad Feyzi 2018</p>
+                <p>&copy; Farshad Feyzi 
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                </p>
             </footer>
         </div>
 
