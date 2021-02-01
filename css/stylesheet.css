@@ -1,403 +1,411 @@
 :root {
-    --dark-green: #17252A;
-    --green: #2B7A78;
-    --light-green: #3AAFA9;
-    --white: #FEFFFF;
-    --black: #000000;
+  --dark-green: #17252a;
+  --green: #2b7a78;
+  --light-green: #3aafa9;
+  --white: #feffff;
+  --black: #000000;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .logo {
-    color: var(--dark-green);
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 30px;
-    padding-left: 10px;
+  color: var(--dark-green);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 10px;
 }
 
 .logo-img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Navigation */
 
 nav {
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
-    background-color: var(--dark-green);
-    z-index: 1;
-    width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  background-color: var(--dark-green);
+  z-index: 1;
+  width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 50px;
+  display: inline-block;
+  margin-right: 50px;
 }
 
 nav li a {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 nav li a:hover {
-    color: var(--green);
+  color: var(--green);
 }
 
 .content {
-    padding: 0px;
+  padding: 0px;
 }
-  
+
 .sticky {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
-  
+
 .sticky + .content {
-    padding-top: 57px;
+  padding-top: 57px;
 }
 
 h1 {
-    position: relative;
+  position: relative;
 }
 
 h1 span {
-    position: absolute;
-    top: -80px;
+  position: absolute;
+  top: -80px;
 }
 
 /* About */
 
 .parallax {
-    text-align: center;
-    background-image: url("../img/Farshad.jpg");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0,0,0,0.4);
-    background-blend-mode: multiply;
-    color: var(--white);
-    margin: 0;
+  text-align: center;
+  background-image: url("../img/Farshad.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  color: var(--white);
+  margin: 0;
 }
 
 .About {
-    position: relative;
-    float: right;
-    width: 30%;
-    text-align: left;
-    padding-right: 35px;
+  position: relative;
+  float: right;
+  width: 30%;
+  text-align: left;
+  padding-right: 35px;
 }
 
 /* Experience */
 
 .Experience {
-    text-align: center;
-    color: var(--green);
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  text-align: center;
+  color: var(--green);
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .work {
-    text-align: left;
-    display: flex;
+  text-align: left;
+  display: flex;
 }
 
 .workImage {
-    padding-top: 23px;
+  padding-top: 23px;
 }
 
 .workDetails {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .workDetailsList {
-    margin: 0;
-    padding: 0 0 0 17px;
-    color: var(--black);
+  margin: 0;
+  padding: 0 0 0 17px;
+  color: var(--black);
 }
 
 .workDetailsList p {
-    color: var(--green);
+  color: var(--green);
 }
 
 .jobImg {
-    height: 75px;
-    width: 75px;
-    border: 1px solid var(--dark-green);
+  height: 75px;
+  width: 75px;
+  border: 1px solid var(--dark-green);
 }
 
 /* Skills */
 
 .Skills {
-    text-align: center;
-    background-color: var(--green);
-    color: var(--white);
-    padding: 1px;
+  text-align: center;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 1px;
 }
 
 .langBlock {
-    text-align: left;
-    padding-left: 20px;
-    padding-bottom: 20px;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .lang {
-    border: 1px solid var(--white);
-    padding: 10px;
-    display: inline-block;
-    margin-right: 10px;
-    -webkit-transition: padding 0.1s;
-    transition: padding 0.1s;
-    margin-bottom: 10px;
+  border: 1px solid var(--white);
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-transition: padding 0.1s;
+  transition: padding 0.1s;
+  margin-bottom: 10px;
 }
 
 /* Projects */
 
 .Portfolio {
-    text-align: center;
-    background-color: var(--white);
-    color: var(--green);
+  text-align: center;
+  background-color: var(--white);
+  color: var(--green);
 }
 
 .proj {
-    text-align: center;
+  text-align: center;
 }
 
 .individualProject {
-    height: 300px;
-    width: 400px;
-    padding: 10px;
-    display: inline-block;
+  height: 300px;
+  width: 400px;
+  padding: 10px;
+  display: inline-block;
 }
 
 .individualProject:hover .overlay {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border: 1px solid var(--dark-green);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--dark-green);
 }
 
 .img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: var(--dark-green);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--dark-green);
 }
 
 table td:hover .overlay {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .text {
-    color: var(--light-green);
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  color: var(--light-green);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .view {
-    border: 1px solid var(--white);
-    background-color: var(--green);
-    border-radius: 8px;
-    color: var(--white);
-    text-align: center;
-    font-size: 15px;
-    padding: 7px;
-    margin-top: 15px;
+  border: 1px solid var(--white);
+  background-color: var(--green);
+  border-radius: 8px;
+  color: var(--white);
+  text-align: center;
+  font-size: 15px;
+  padding: 7px;
+  margin-top: 15px;
 }
 
 .view:hover {
-    background-color: var(--white);
-    color: var(--green);
-    border-color: var(--green);
+  background-color: var(--white);
+  color: var(--green);
+  border-color: var(--green);
 }
 
 /* Contact */
 
 .Contact {
-    background-color: var(--green);
-    color: var(--white);
-    text-align: center;
-    padding: 1px;
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1px;
 }
 
 .aligned label {
-    font-weight: bold;
-    float: left;
-    margin-left: 20px;
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
 }
 
 .aligned {
-    display: inline-block;
+  display: inline-block;
 }
 
 .half {
-    height: 25px;
-    width: 200px;
-    padding: 3px 20px;
-    margin: 10px 20px;
-    border: 1px solid var(--dark-green);
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+  height: 25px;
+  width: 200px;
+  padding: 3px 20px;
+  margin: 10px 20px;
+  border: 1px solid var(--dark-green);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
 }
 
 .submit {
-    border-radius: 4px;
-    border: none;
-    background-color: var(--dark-green);
-    color: white;
-    width: 100px;
-    height: 40px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--dark-green);
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
 }
 
 .submit:hover {
-    background-color: var(--white);
-    color: var(--green);
-    border-color: var(--green);
+  background-color: var(--white);
+  color: var(--green);
+  border-color: var(--green);
 }
 
-input[type=text]:focus {
-    border: 2px solid var(--light-green);
+input[type="text"]:focus {
+  border: 2px solid var(--light-green);
 }
 
 textarea {
-    resize: vertical;
-    border-color: var(--dark-green);
-    width: 485px;
-    padding: 8px 20px;
-    margin: 10px 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+  resize: vertical;
+  border-color: var(--dark-green);
+  width: 485px;
+  padding: 8px 20px;
+  margin: 10px 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
 }
 
 /* Footer */
 
 footer {
-    background-color: var(--dark-green);
-    color: var(--white);
-    text-align: center;
-    padding-bottom: 1px;
+  background-color: var(--dark-green);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1px;
 }
 
 footer a {
-    margin: 10px;
+  margin: 10px;
 }
 
 .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border: 0.5px solid;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 0.5px solid;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-.fa-facebook, .fa-instagram, .fa-github, .fa-linkedin, .fa-angellist {
-    background: var(--green);
-    color: var(--white);
-    border-color: var(--white);
+.fa-facebook,
+.fa-instagram,
+.fa-github,
+.fa-linkedin,
+.fa-angellist {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--white);
 }
 
-.fa-facebook:hover, .fa-instagram:hover, .fa-github:hover, .fa-linkedin:hover, .fa-angellist:hover {
-    background-color: var(--white);
-    color: var(--green);
-    border-color: var(--green);
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-angellist:hover {
+  background-color: var(--white);
+  color: var(--green);
+  border-color: var(--green);
 }
 
 hr {
-    border: 0.5px solid var(--dark-green);
-    width: 70%;
+  border: 0.5px solid var(--dark-green);
+  width: 70%;
 }
 
 /* Media Query */
 
 @media only screen and (max-width: 650px) {
-    nav li {
-        margin-right: 30px;
-    }
+  nav li {
+    margin-right: 30px;
+  }
 
-    .parallax {
-        background-image: url("../img/Farshad-small.jpg");
-        height: 600px;
-    }
+  .parallax {
+    background-image: url("../img/Farshad-small.jpg");
+    height: 600px;
+  }
 
-    .About {
-        width: auto;
-        text-align: center;
-        margin-top: 325px;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
+  .About {
+    width: auto;
+    text-align: center;
+    margin-top: 325px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 
-    .individualProject {
-        height: 225px;
-        width: 325px;
-        padding: 10px;
-        display: inline-block;
-    }
+  .individualProject {
+    height: 225px;
+    width: 325px;
+    padding: 10px;
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 570px) {
-    nav li {
-        margin-right: 25px;
-    }
+  nav li {
+    margin-right: 25px;
+  }
 
-    .half {
-        height: 25px;
-        width: 375px;
-        padding: 3px 20px;
-        margin: 10px 20px;
-        border: 1px solid var(--dark-green);
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 15px;
-    }
+  .half {
+    height: 25px;
+    width: 375px;
+    padding: 3px 20px;
+    margin: 10px 20px;
+    border: 1px solid var(--dark-green);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+  }
 
-    textarea {
-        width: 375px;
-        padding: 8px 20px;
-        margin: 10px 20px;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 15px;
-    }
+  textarea {
+    width: 375px;
+    padding: 8px 20px;
+    margin: 10px 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+  }
 }
