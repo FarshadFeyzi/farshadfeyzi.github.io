@@ -1,3 +1,11 @@
+:root {
+    --dark-green: #17252A;
+    --green: #2B7A78;
+    --light-green: #3AAFA9;
+    --white: #FEFFFF;
+    --black: #000000;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +13,7 @@ body {
 }
 
 .logo {
-    color: #17252A;
+    color: var(--dark-green);
     font-weight: bold;
     text-decoration: none;
     font-size: 30px;
@@ -22,7 +30,7 @@ nav {
     text-align: center;
     overflow: hidden;
     padding: 20px;
-    background-color: #17252A;
+    background-color: var(--dark-green);
     z-index: 1;
     width: 100%;
 }
@@ -39,12 +47,12 @@ nav li {
 }
 
 nav li a {
-    color: #FEFFFF;
+    color: var(--white);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: #2B7A78;
+    color: var(--green);
 }
 
 .content {
@@ -81,7 +89,7 @@ h1 span {
     background-size: cover;
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
-    color: #FEFFFF;
+    color: var(--white);
     margin: 0;
 }
 
@@ -97,7 +105,7 @@ h1 span {
 
 .Experience {
     text-align: center;
-    color: #2B7A78;
+    color: var(--green);
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -116,18 +124,28 @@ h1 span {
     padding-left: 25px;
 }
 
+.workDetailsList {
+    margin: 0;
+    padding: 0 0 0 17px;
+    color: var(--black);
+}
+
+.workDetailsList p {
+    color: var(--green);
+}
+
 .jobImg {
     height: 75px;
     width: 75px;
-    border: 1px solid #17252A;
+    border: 1px solid var(--dark-green);
 }
 
 /* Skills */
 
 .Skills {
     text-align: center;
-    background-color: #2B7A78;
-    color: #FEFFFF;
+    background-color: var(--green);
+    color: var(--white);
     padding: 1px;
 }
 
@@ -138,7 +156,7 @@ h1 span {
 }
 
 .lang {
-    border: 1px solid #FEFFFF;
+    border: 1px solid var(--white);
     padding: 10px;
     display: inline-block;
     margin-right: 10px;
@@ -151,8 +169,8 @@ h1 span {
 
 .Portfolio {
     text-align: center;
-    background-color: #FEFFFF;
-    color: #2B7A78;
+    background-color: var(--white);
+    color: var(--green);
 }
 
 .proj {
@@ -174,7 +192,7 @@ h1 span {
     position: relative;
     height: 100%;
     width: 100%;
-    border: 1px solid #17252A;
+    border: 1px solid var(--dark-green);
 }
 
 .img {
@@ -192,7 +210,7 @@ h1 span {
     height: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #17252A;
+    background-color: var(--dark-green);
 }
 
 table td:hover .overlay {
@@ -200,7 +218,7 @@ table td:hover .overlay {
 }
 
 .text {
-    color: #3AAFA9;
+    color: var(--light-green);
     font-size: 25px;
     position: absolute;
     top: 50%;
@@ -212,10 +230,10 @@ table td:hover .overlay {
 }
 
 .view {
-    border: 1px solid #FEFFFF;
-    background-color: #2B7A78;
+    border: 1px solid var(--white);
+    background-color: var(--green);
     border-radius: 8px;
-    color: #FEFFFF;
+    color: var(--white);
     text-align: center;
     font-size: 15px;
     padding: 7px;
@@ -223,16 +241,16 @@ table td:hover .overlay {
 }
 
 .view:hover {
-    background-color: #FEFFFF;
-    color: #2B7A78;
-    border-color: #2B7A78;
+    background-color: var(--white);
+    color: var(--green);
+    border-color: var(--green);
 }
 
 /* Contact */
 
 .Contact {
-    background-color: #2B7A78;
-    color: #FEFFFF;
+    background-color: var(--green);
+    color: var(--white);
     text-align: center;
     padding: 1px;
 }
@@ -252,7 +270,7 @@ table td:hover .overlay {
     width: 200px;
     padding: 3px 20px;
     margin: 10px 20px;
-    border: 1px solid #17252A;
+    border: 1px solid var(--dark-green);
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
@@ -260,7 +278,7 @@ table td:hover .overlay {
 .submit {
     border-radius: 4px;
     border: none;
-    background-color: #17252A;
+    background-color: var(--dark-green);
     color: white;
     width: 100px;
     height: 40px;
@@ -269,18 +287,18 @@ table td:hover .overlay {
 }
 
 .submit:hover {
-    background-color: #FEFFFF;
-    color: #2B7A78;
-    border-color: #2B7A78;
+    background-color: var(--white);
+    color: var(--green);
+    border-color: var(--green);
 }
 
 input[type=text]:focus {
-    border: 2px solid #3AAFA9;
+    border: 2px solid var(--light-green);
 }
 
 textarea {
     resize: vertical;
-    border-color: #17252A;
+    border-color: var(--dark-green);
     width: 485px;
     padding: 8px 20px;
     margin: 10px 20px;
@@ -291,8 +309,8 @@ textarea {
 /* Footer */
 
 footer {
-    background-color: #17252A;
-    color: #FEFFFF;
+    background-color: var(--dark-green);
+    color: var(--white);
     text-align: center;
     padding-bottom: 1px;
 }
@@ -316,19 +334,19 @@ footer a {
 }
 
 .fa-facebook, .fa-instagram, .fa-github, .fa-linkedin, .fa-angellist {
-    background: #2B7A78;
-    color: #FEFFFF;
-    border-color: #FEFFFF;
+    background: var(--green);
+    color: var(--white);
+    border-color: var(--white);
 }
 
 .fa-facebook:hover, .fa-instagram:hover, .fa-github:hover, .fa-linkedin:hover, .fa-angellist:hover {
-    background-color: #FEFFFF;
-    color: #2B7A78;
-    border-color: #2B7A78;
+    background-color: var(--white);
+    color: var(--green);
+    border-color: var(--green);
 }
 
 hr {
-    border: 0.5px solid #17252A;
+    border: 0.5px solid var(--dark-green);
     width: 70%;
 }
 
@@ -370,7 +388,7 @@ hr {
         width: 375px;
         padding: 3px 20px;
         margin: 10px 20px;
-        border: 1px solid #17252A;
+        border: 1px solid var(--dark-green);
         font-family: 'Ubuntu', sans-serif;
         font-size: 15px;
     }
