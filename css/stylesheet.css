@@ -244,6 +244,7 @@ table td:hover .overlay {
   background-color: var(--white);
   color: var(--green);
   border-color: var(--green);
+  cursor: pointer;
 }
 
 /* Contact */
@@ -290,6 +291,7 @@ table td:hover .overlay {
   background-color: var(--white);
   color: var(--green);
   border-color: var(--green);
+  cursor: pointer;
 }
 
 input[type="text"]:focus {
