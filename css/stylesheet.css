@@ -81,7 +81,7 @@ h1 span {
 
 .parallax {
   text-align: center;
-  background-image: url("../img/Farshad.jpg");
+  background-image: url("../img/personal/farshad.jpg");
   height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -366,7 +366,7 @@ hr {
   }
 
   .parallax {
-    background-image: url("../img/Farshad-small.jpg");
+    background-image: url("../img/personal/farshad-small.jpg");
     height: 600px;
   }
 
