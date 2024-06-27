@@ -130,6 +130,10 @@ h1 span {
   color: var(--black);
 }
 
+.workDetailsList b {
+  color: var(--dark-green);
+}
+
 .workDetailsList p {
   color: var(--green);
 }
